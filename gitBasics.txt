@@ -1,0 +1,62 @@
+*************GIT BASIC COMMANDS*******************
+
+STAGING AND COMMITTING:
+
+    1. To initialize a git repository (a .git folder is created at this step) -> first mandatory step
+    >git init
+
+    2. Windows cmd command to view hidden files(to see the .git folder)
+    >dir /a
+
+    3. Windows cmd command to view contents of the .git folder.
+    >dir .git
+
+    4. Once changes are made to your local repository, 
+    they should be moved to staging area to track your changes
+    and it is the files in the staging area that is committed.
+
+    untracked/unstaged files/changes----->staged files----->changes are committed 
+
+    To check status at any of these steps:
+
+    >git status
+
+    5. To stage a file
+    >git add <filename>
+
+    6. To add all unstaged files
+    >git add .
+
+    7. To unstage a staged file
+    >git restore --staged <filename>
+
+    8. To commit changes in staging area with a message
+    >git commit -m "write your commit message here"
+
+    9. To view all existing commits
+    >git log
+
+    10. To rollback or revert to a previous commit
+    >git reset <commit_id>
+
+    NOTE: commit_id is visible from the previous git command -> git log
+
+GIT STASH
+
+    1. Consider certain changes are been made 
+    and after committing those changes certain new changes are made.
+    But if you don not want to commit those changes yet 
+    and have to work on something else from the previous commit, you can stash them 
+    and later pop out these stashed code to your unstaged area by using:
+
+    >git stash
+    >git stash pop
+
+    NOTE: to stash make use first all changes are staged using -> git add .
+            
+    2. To delete all that is in the stashed area, 
+    if you do not want them to be poped later use:
+
+    >git stash clear
+
+GIT BRANCHES
