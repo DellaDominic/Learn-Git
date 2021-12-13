@@ -45,8 +45,21 @@ STAGING AND COMMITTING:
     11. To create/ add a remote 
     >git remote add <remotename> <https address i.e. url>
 
-    12. To push local changes (to both remote and thus github)
+    12. To delete a remote
+    >git remote rm <remotename>
+
+    13.view remotes 
+    
+    To view all remotes
+    >git remote
+
+    To view remotes with url
+    >git remote -v
+
+    14. To push local changes (to both remote and thus github)
     >git push <remotename> <branchname>
+    NOTE: to force push to overwrite YOUR remote repo with YOUR local repo:
+    >git push <remotename> <branchname> -f
 
 GIT STASH
 
@@ -67,4 +80,26 @@ GIT STASH
     >git stash clear
 
 GIT BRANCHES
+
+    1. view existing branches
+    >git branch
+    NOTE: *for a branch shows that, current head is pointing to that branch.
+
+    2. To view local and remote banches separately
+    >git branch -r
+    NOTE: remote branches are read only but you can ceckout those branches as well.
+    All remote branches are prefixed with 'remote-repo/'
+
+    2. create a new branch
+    >git branch <branchname>
+
+    3. checkout of a branch i.e. point HEAD to that branch
+    >git checkout <branchname>
+
+    4. To delete a branch
+    >git branch -d <branchname> 
+    NOTE: before deleting make sure to checkout to a different branch.
+
+
+
 
