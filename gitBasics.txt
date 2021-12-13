@@ -4,6 +4,7 @@ STAGING AND COMMITTING:
 
     1. To initialize a git repository (a .git folder is created at this step) -> first mandatory step
     >git init
+    NOTE: cd into the correct project folder before doing this.
 
     2. Windows cmd command to view hidden files(to see the .git folder)
     >dir /a
@@ -21,8 +22,9 @@ STAGING AND COMMITTING:
 
     >git status
 
-    5. To stage a file
+    5. To stage a file or multiple files by filename
     >git add <filename>
+    >git add <filename1> <filename2>
 
     6. To add all unstaged files
     >git add .
@@ -38,8 +40,13 @@ STAGING AND COMMITTING:
 
     10. To rollback or revert to a previous commit
     >git reset <commit_id>
-
     NOTE: commit_id is visible from the previous git command -> git log
+
+    11. To create/ add a remote 
+    >git remote add <remotename> <https address i.e. url>
+
+    12. To push local changes (to both remote and thus github)
+    >git push <remotename> <branchname>
 
 GIT STASH
 
@@ -60,3 +67,4 @@ GIT STASH
     >git stash clear
 
 GIT BRANCHES
+

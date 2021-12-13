@@ -1,0 +1,73 @@
+*******USING GIT WITH GITHUB********
+
+INTRO
+
+    Git repositories can be hosted using a git hosting service like github
+
+    You can: 
+        1. Host your projects on github
+
+            method 1 -> 
+                create a github repo first and clone that locally
+                (no need to create/add remote origin here as it's
+                done automatically in the background while cloning )
+                
+                local project repo<---- remote (repo on github server)<----github repo
+                changes to local repo--------------(push)----------------------->github repo
+
+                GIT COMMANDS
+
+                1. create github repo
+
+                2. clone (remote linked and local repo of the github repo created)
+                    >git clone <https address>
+
+                3. make changes and check status, add, commit, push(github repo updated)
+                    >git status
+                    >git add .
+                    >git commit
+                    >git push <remotename> <branchname>
+                        NOTE : 
+                            To get remote name -> git remote -v
+                            To get branch name -> git branch 
+
+            method 2 ->
+                create a local repo first, create github repo
+                and add remote and push to github.
+                (here try not to initialize a readme.md file while creating a github repo
+                so as to get the git commands for adding a remote and pushing a local copy)
+
+                local project repo------> add remote(repo on github server)---->github repo
+                changes to local repo--------------(push)----------------------->github repo
+
+                GIT COMMANDS
+
+                1. Initialize git repo in project folder
+                    >git init
+                2. code and make changes and check status, add, commit
+                    >git status
+                    >git add .
+                    >git commit
+                3.Create a github repo(try not to create a readme.md file yet)
+                4. Add remote named origin (and link the github repo)
+                    >git remote add origin <https address i.e. url>
+                5. Push local repo to github
+                    >git push <remotename> <branchname>
+                        NOTE : 
+                            To get remote name -> git remote -v
+                            To get branch name -> git branch 
+                6. make changes and check status, add, commit, push(github repo updated)
+                    >git status
+                    >git add .
+                    >git commit
+                    >git push <remotename> <branchname>
+                        NOTE : 
+                            To get remote name -> git remote -v
+                            To get branch name -> git branch
+                    
+
+        2. Contributing to opensource projects or other repositories
+
+ 
+
+   
