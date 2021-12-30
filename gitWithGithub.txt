@@ -54,7 +54,7 @@ INTRO
                 5. Push local repo to github
                     >git push <remotename> <branchname>
                         NOTE : 
-                            Before puhing code ensure you are in main and that is the main branch not master, else do:
+                            Before pushing code ensure you are in the main branch and not master, else do:
                             -> git branch -M main
                             To get remote name -> git remote -v
                             To get branch name -> git branch 
