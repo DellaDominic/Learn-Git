@@ -70,6 +70,19 @@ INTRO
 
         2. Contributing to opensource projects or other repositories
 
+            Always go through the contribution guidelines mentioned in the contribution.md document of the repository you wish to contribute to, before making a contribution.
+
+            1. Fork the project to which you would like to contribute, by clicking on the fork button on the respective repository.
+            2. This will create a forked repo in your profile. Clone this forked repo by clicking on the code button and copy the https url.
+            3. Use below command to clone the repo using below command:
+                > git clone <url you just copied>
+            4. Rename your current branch from master to main. (if required)
+                > git branch -M main
+            5. Make you contribution - the code changes you wish to contribute! stage, commit and push your changes.
+                > git add .
+                > git commit -m "give your commit message here"
+                > git push origin main
+            6. Now you can go to the actual repository and raise PR by clicking on the raise PR button.
  
 
    
