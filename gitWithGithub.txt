@@ -2,27 +2,27 @@
 
 INTRO
 
-    Git repositories can be hosted using a git hosting service like github
+    Git repositories can be hosted using a Git hosting service like GitHub
 
     You can: 
-        1. Host your projects on github
+        1. Host your projects on GitHub
 
             method 1 -> 
-                create a github repo first and clone that locally
-                (no need to create/add remote origin here as it's
+                create a GitHub repo first and clone that locally
+                (There is no need to create/add remote origin here as it's
                 done automatically in the background while cloning )
                 
-                local project repo<---- remote (repo on github server)<----github repo
-                changes to local repo--------------(push)----------------------->github repo
+                local project repo <---- remote (repo on GitHub server) <---- GitHub repo
+                changes to local repo  --------------(push)-----------------------> GitHub repo
 
                 GIT COMMANDS
 
-                1. create github repo
+                1. create GitHub repo on www.github.com
 
-                2. clone (remote linked and local repo of the github repo created)
+                2. clone (remote linked and local repo of the GitHub repo created)
                     >git clone <https address>
 
-                3. make changes and check status, add, commit, push(github repo updated)
+                3. make changes and check status, add, commit, push (GitHub repo updated)
                     >git status
                     >git add .
                     >git commit
@@ -32,33 +32,33 @@ INTRO
                             To get branch name -> git branch 
 
             method 2 ->
-                create a local repo first, create github repo
-                and add remote and push to github.
-                (here try not to initialize a readme.md file while creating a github repo
-                so as to be able to push your local repo else have to force push it which overwrites the remote repo i.e removes readme file)
+                create a local repo first, and create a GitHub repo
+                and add remote and push to Github.
+                (here try not to initialize a readme.md file while creating a GitHub repo
+                to be able to push your local repo else have to force push it which overwrites the remote repo i.e removes the readme file)
 
-                local project repo------> add remote(repo on github server)---->github repo
-                changes to local repo--------------(push)----------------------->github repo
+                local project repo ------> add remote(repo on github server)----> github repo
+                changes to local repo --------------(push)-----------------------> github repo
 
                 GIT COMMANDS
 
-                1. Initialize git repo in project folder
+                1. Initialize the git repo in the project folder
                     >git init
                 2. code and make changes and check status, add, commit
                     >git status
                     >git add .
                     >git commit
-                3.Create a github repo(don't create a readme.md file or any other files)
-                4. Add remote named origin (and link the github repo)
+                3. Create a GitHub repo on www.github.com (don't create a readme.md file or any other files)
+                4. Add remote named origin (and link the GitHub repo)
                     >git remote add origin <https address i.e. url>
-                5. Push local repo to github
+                5. Push local repo to GitHub
                     >git push <remotename> <branchname>
                         NOTE : 
-                            Before pushing code ensure you are in the main branch and not master, else do:
+                            Before pushing code ensure you are in the main branch and not master, else do this to rename your master branch to take the name main:
                             -> git branch -M main
                             To get remote name -> git remote -v
                             To get branch name -> git branch 
-                6. make changes and check status, add, commit, push(github repo updated)
+                6. make changes and check status, add, commit, push(GitHub repo updated)
                     >git status
                     >git add .
                     >git commit
